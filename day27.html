@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flexbox property</title>
+        <style>
+            *{
+                margin: 5px;
+                padding: 5px;
+            }
+            #container{
+                 border: 3px solid grey;
+                 height: 600px;
+                 width: 600px;
+                 padding: 10px;
+                 margin: 20px;
+                 background-color: lavender;
+                 display: flex;
+                 flex-direction: row-reverse;
+            }
+
+            .box{
+                 height: 80px;
+                 width: 80px;
+                 margin: 5px;
+                 border: 1px solid;
+                }
+            #box1{
+                background-color: azure;
+            }
+            #box2{
+                background-color: rgb(34, 192, 192);
+            }
+            #box3{
+                background-color: rgb(73, 154, 154);
+            }
+            #box4{
+                background-color: rgb(49, 159, 199);
+            }
+            #heading{
+                justify-content: center;
+                color: crimson;
+            }
+        </style>
+    </head>
+    <body>
+           <br>  
+           <h1 id="heading">Flex Container</h1>
+            <div id="container">
+                <div id="box1" class="box"> Item 1</div>
+                <div id="box2" class="box"> Item 2</div>
+                <div id="box3" class="box"> Item 3</div>
+                <div id="box4" class="box"> Item 4</div>
+            </div>    
+    </body>
+</html>
