@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Bar</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            padding-top:80px;   }
+
+        ul{
+            list-style:none;
+            background:black;
+            display:flex;
+            align-items:center;
+            padding:20px;
+            width:100%;
+            position:fixed;
+            top:0;
+            left:0;
+        }
+
+        li{
+            padding:10px;
+        }
+
+        li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+        }
+
+        li:hover{
+            background:gray;
+            border-radius:5px;
+        }
+
+       
+        .search{
+            margin-left:auto;
+        }
+
+        input{
+            padding:6px;
+            border-radius:5px;
+            border:none;
+        }
+
+        h1{
+            margin:20px;
+        }
+
+        p{
+            margin:20px;
+            font-size:20px;
+            font-style:italic;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <ul>
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">About</a></li>
+
+        <li><a href="#">Courses</a></li>
+
+        <li><a href="#">Contact</a></li>
+
+        <li><a href="#">Privacy Policy</a></li>
+
+        <li class="search">
+            <form>
+                <label for="search" style="color:white;">Search :</label>
+                <input
+                    id="search"
+                    type="text"
+                    placeholder="Search here">
+            </form>
+        </li>
+
+    </ul>
+
+    <h1>Welcome</h1>
+
+    <p>
+        This is a simple navigation bar example.
+    </p>
+
+</body>
+</html>
