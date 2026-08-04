@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clovers</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <style>
+           *{
+                margin: 0;
+                padding: 0;
+            }
+            nav{
+                background-color: rgb(171, 34, 34);
+                height: 40px;
+                }
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+             }
+            li{
+                list-style-type: none;
+            }
+            ul{
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                padding: .5rem; 
+            }
+            #one{
+                padding-left: 200px;
+            }
+            #two{
+                background-color: darksalmon;
+                height:100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 20px;
+
+            }
+         .icons{
+            font-size: 30px;
+            color: black;
+         }
+           
+          #nav3{
+            background-color: aliceblue;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+          } 
+          #nav3 a{
+            color: rgb(2, 102, 124);
+          }     
+          .submenu{
+
+            display: none;
+            position: absolute;
+          }
+          .submenu ul{
+            flex-direction: column;
+            padding: 1rem;
+
+          }
+          #nav3 li:hover .submenu{
+            display: block;
+            background-color: rgb(155, 220, 242);
+          }
+          #three{
+            padding:0.7rem 0 ;
+            width: 25rem;
+            /* border: 1px solid #212121; */
+            display: flex;
+            gap:10px;
+            border-radius: 25px;
+            box-shadow:0 2px 10px 5px rgba(102, 97, 97, 0.2);
+            justify-content: center;
+            align-items: center;
+          }
+          .search{
+            width:80%;
+            outline:none;
+            border:transparent;
+            padding:0.5rem;
+            background-color:darksalmon ;
+          }
+          .search::placeholder{
+            color: black;
+          }
+
+          
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#"> Customer Support</a></li>
+                <li><a href="#" id="one"> Get 20% off on your first order</a></li>
+            </ul>
+        </nav>
+        <nav id="two">
+            <h1>CLOVERS.</h1>
+            <div id="three">
+               <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="search" placeholder="Search Items" maxlength="20">
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+       </nav>
+       <nav id="nav3">
+            <ul>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#"> Food</a><div class="submenu">
+                    <ul>
+                        <li><a href="">Non veg</a></li>
+                        <li><a href="">vegertarian</a></li>
+                        <li><a href="">drinks</a></li>
+                        <li><a href="">desert</a></li>
+                        <li><a href="">continental</a></li>
+                    </ul>
+                </div></li>
+                <li><a href="#"> Beverages</a></li>
+                <li><a href="#">Household</a></li>
+                <li><a href="#">Personal care</a></li>
+                <li><a href="#"> My Orders</a></li>
+            </ul>
+       </nav>
+    </body>
+</html>
