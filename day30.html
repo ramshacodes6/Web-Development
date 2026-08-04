@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 30</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 23 - CSS Transition</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef2ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    display:flex;
+    gap:30px;
+}
+
+.box{
+    width:170px;
+    height:170px;
+    background:#2563eb;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:15px;
+    cursor:pointer;
+
+
+    transition:0.5s;
+}
+
+
+
+    .box:hover{
+
+         background:#1e3a8a;
+        border-radius:40px;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+
+    <div class="box">
+        Box 1
+    </div>
+
+    <div class="box">
+        Box 2
+    </div>
+
+    <div class="box">
+        Box 3
+    </div>
+
+    </div>
+
+</body>
+</html>
