@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 24 - Transition Practice</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef2ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.box{
+    width:170px;
+    height:170px;
+    background:#2563eb;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:22px;
+    font-weight:bold;
+}
+
+
+
+.box1:hover{
+    background:green;
+    transition:ease;
+    transition:0.5s;
+}
+
+.box2:hover{
+    border-radius:50px;
+    transition:ease-in-out;
+    transition:0.5s;
+   
+}
+
+.box3:hover{
+    color:yellow;
+    transition-delay:2s;
+    transition:1s;
+}
+
+.box4:hover{
+    width:220px;
+     transition:linear;
+    transition:2s;
+    /* transition-delay:1s; */
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="box box1">Box 1</div>
+
+    <div class="box box2">Box 2</div>
+
+    <div class="box box3">Box 3</div>
+
+    <div class="box box4">Box 4</div>
+
+</div>
+
+</body>
+</html>
