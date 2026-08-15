@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Login Form</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            min-height: 100vh;
+            background-color: #dbeafe;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        .login-box{
+            width: 350px;
+            background-color: white;
+            padding: 30px;
+
+            border: 1px solid #ddd;
+            border-radius: 15px;
+
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 25px;
+            color: #1e3a8a;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 7px;
+            color: #333;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+
+            border: 1px solid #bbb;
+            border-radius: 8px;
+
+            outline: none;
+        }
+
+        input:focus{
+            border-color: #2563eb;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+
+            border: none;
+            border-radius: 8px;
+
+            background-color: #2563eb;
+            color: white;
+
+            font-size: 16px;
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background-color: #1e3a8a;
+        }
+
+        .signup{
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .signup a{
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+
+        /* Responsive Design */
+
+        @media (max-width: 500px){
+
+            .login-box{
+                width: 100%;
+                padding: 25px;
+            }
+
+            h1{
+                font-size: 25px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+
+        <h1>Login</h1>
+
+        <form>
+
+            <label for="email">Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <label for="password">Password</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+            >
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <div class="signup">
+            Don't have an account?
+            <a href="#">Sign Up</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
