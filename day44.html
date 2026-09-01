@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Variables</title>
+
+    <style>
+
+        :root{
+            --primary-color: #2563eb;
+            --secondary-color: #7c3aed;
+            --text-color: #1e293b;
+            --card-radius: 15px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color: #f1f5f9;
+            padding: 40px;
+        }
+
+        h1{
+            color: var(--text-color);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            width: 250px;
+            padding: 25px;
+
+            background-color: white;
+
+            border-radius: var(--card-radius);
+
+            border: 2px solid var(--primary-color);
+
+            text-align: center;
+        }
+
+        .card h2{
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .card p{
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        button{
+            background-color: var(--secondary-color);
+            color: white;
+
+            border: none;
+            padding: 10px 20px;
+
+            border-radius: var(--card-radius);
+
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My Cards</h1>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>HTML</h2>
+
+            <p>
+                I am learning HTML.
+            </p>
+
+            <button>
+                Learn
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>CSS</h2>
+
+            <p>
+                I am learning CSS.
+            </p>
+
+            <button>
+                Learn
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>GitHub</h2>
+
+            <p>
+                I am practicing GitHub.
+            </p>
+
+            <button>
+                Learn
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
