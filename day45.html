@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Design</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #e0f2fe;
+            padding: 30px;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .container{
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+        }
+
+        .box{
+
+            width: 200px;
+            height: 150px;
+
+            background-color: #2563eb;
+
+            color: white;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            border-radius: 10px;
+
+            font-size: 20px;
+        }
+
+
+        /* Mobile */
+
+        @media (max-width: 600px){
+
+            body{
+                background-color: #fef3c7;
+            }
+
+            .container{
+
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+            .box{
+
+                width: 100%;
+
+                max-width: 350px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Responsive Boxes</h1>
+
+    <div class="container">
+
+        <div class="box">
+            Box 1
+        </div>
+
+        <div class="box">
+            Box 2
+        </div>
+
+        <div class="box">
+            Box 3
+        </div>
+
+    </div>
+
+</body>
+
+</html>
