@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixed and Sticky</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            height: 1500px;
+        }
+
+        /* Fixed */
+        .fixed-button {
+            position: fixed;
+
+            right: 20px;
+            bottom: 20px;
+
+            background-color: black;
+            color: white;
+
+            padding: 15px 20px;
+            border-radius: 10px;
+        }
+
+        /* Sticky */
+        .navbar {
+            position: sticky;
+            top: 0;
+
+            background-color: darkblue;
+            color: white;
+
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        My Sticky Navbar
+    </div>
+
+    <div class="content">
+
+        <h1>Scroll Down 👇</h1>
+
+        
+
+        <p>
+            scroll More
+            <!-- Sticky navbar ko notice karo. -->
+        </p>
+
+        <br><br><br><br><br><br><br><br>
+
+        <h2>More Content</h2>
+
+        <p>
+            <!-- Scroll karte raho... -->
+        </p>
+
+        <br><br><br><br><br><br><br><br>
+
+        <h2>End</h2>
+
+    </div>
+
+    <div class="fixed-button">
+        🔝 Top
+    </div>
+
+</body>
+</html>
