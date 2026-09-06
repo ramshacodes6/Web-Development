@@ -22,9 +22,10 @@
             min-height: 100vh;
 
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
-
+            gap : 100px;
+            /* margin :50px; */
             background-color: #f1f5f9;
         }
 
@@ -54,6 +55,49 @@
             transform: scale(1.1);
         }
 
+        .form{
+
+            width: 350px;
+
+            background-color: white;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input{
+
+            width: 100%;
+
+            padding: 12px;
+
+            margin-bottom: 15px;
+
+            border: 2px solid #cbd5e1;
+
+            border-radius: 8px;
+
+            outline: none;
+
+            font-size: 16px;
+        }
+
+
+        input:focus{
+
+            border-color: #2563eb;
+
+            box-shadow: 0 0 8px rgba(37,99,235,0.4);
+        }
+
     </style>
 
 </head>
@@ -64,6 +108,19 @@
         Hover Me
     </button>
 
+
+
+    <div class="form">
+
+        <h2>Login Form</h2>
+
+        <input type="text" placeholder="Enter your name">
+
+        <input type="email" placeholder="Enter your email">
+
+        <input type="password" placeholder="Enter password">
+
+    </div>
 </body>
 
 </html>
