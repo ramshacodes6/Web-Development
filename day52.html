@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>First and Last Child</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            padding: 40px;
+        }
+
+        .container{
+            max-width: 500px;
+            margin: auto;
+
+            background-color: white;
+            padding: 25px;
+
+            border-radius: 15px;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .item{
+            padding: 15px;
+            margin-bottom: 10px;
+
+            background-color: #e2e8f0;
+
+            border-radius: 8px;
+        }
+
+
+        /* First Child */
+
+        .item:first-child{
+            background-color: #2563eb;
+            color: white;
+        }
+
+
+        /* Last Child */
+
+        .item:last-child{
+            background-color: #16a34a;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>First and Last Child</h1>
+
+    <div class="container">
+
+        <div class="item">HTML</div>
+        <div class="item">CSS</div>
+        <div class="item">JavaScript</div>
+        <div class="item">GitHub</div>
+
+    </div>
+
+</body>
+</html>
