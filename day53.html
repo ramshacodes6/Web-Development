@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Odd Even Practice</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+            padding: 40px;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .container{
+            max-width: 600px;
+            margin: auto;
+
+            background-color: white;
+
+            padding: 20px;
+
+            border-radius: 15px;
+        }
+
+        .item{
+            padding: 18px;
+            font-size: 18px;
+        }
+
+
+        /* Odd items */
+
+        .item:nth-child(odd){
+            background-color: #dbeafe;
+        }
+
+
+        /* Even items */
+
+        .item:nth-child(even){
+            background-color: #e0e7ff;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>My Learning Journey</h1>
+
+    <div class="container">
+
+        <div class="item">Day 1 - HTML Basics</div>
+        <div class="item">Day 2 - Headings and Paragraphs</div>
+        <div class="item">Day 3 - Links</div>
+        <div class="item">Day 4 - Images</div>
+        <div class="item">Day 5 - Lists</div>
+        <div class="item">Day 6 - Practice</div>
+
+    </div>
+
+</body>
+</html>
