@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Translate and Scale</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+
+        .box {
+            width: 150px;
+            height: 100px;
+
+            background-color: lightblue;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 50px;
+
+            transition: 0.4s;
+        }
+
+        .box:hover {
+            transform: translate(50px, 20px);
+        }
+
+        .card {
+            width: 200px;
+            height: 120px;
+
+            background-color: lightgreen;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 50px;
+
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Translate and Scale</h1>
+
+    <div class="box">
+        Move Me
+    </div>
+
+    <div class="card">
+        Make Me Bigger
+    </div>
+
+</body>
+
+</html>
