@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rotate and Skew</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            padding: 50px;
+
+        }
+
+        .rotate-box {
+
+            width: 150px;
+            height: 100px;
+
+            background-color: orange;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 70px;
+
+            transition: 0.4s;
+
+        }
+
+        .rotate-box:hover {
+
+            transform: rotate(10deg);
+
+        }
+
+
+        .skew-box {
+
+            width: 150px;
+            height: 100px;
+
+            background-color: purple;
+
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 70px;
+
+            transition: 0.4s;
+
+        }
+
+        .skew-box:hover {
+
+            transform: skew(15deg);
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Rotate and Skew</h1>
+
+    <div class="rotate-box">
+        Rotate Me
+    </div>
+
+    <div class="skew-box">
+        Skew Me
+    </div>
+
+</body>
+
+</html>
