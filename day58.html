@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Basic  Animation</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+
+        .box {
+
+            width: 100px;
+            height: 100px;
+
+            background-color: blue;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+
+            animation-name: moveBox;
+            animation-duration: 2s;
+
+        }
+
+
+        @keyframes moveBox {
+
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(300px);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Animation</h1>
+
+    <div class="box">
+        Move
+    </div>
+
+</body>
+
+</html>
