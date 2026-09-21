@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation Timing</title>
+
+    <style>
+        .box {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+            margin: 20px;
+
+            animation-name: move;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .ease {
+            animation-timing-function: ease;
+        }
+
+        .linear {
+            animation-timing-function: linear;
+        }
+
+        .ease-in {
+            animation-timing-function: ease-in;
+        }
+
+        .ease-out {
+            animation-timing-function: ease-out;
+        }
+
+        .ease-in-out {
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(500px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Animation Timing Functions</h2>
+
+    <div class="box ease"></div>
+    <div class="box linear"></div>
+    <div class="box ease-in"></div>
+    <div class="box ease-out"></div>
+    <div class="box ease-in-out"></div>
+
+</body>
+</html>
