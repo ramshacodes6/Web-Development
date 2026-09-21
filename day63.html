@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading Bar</title>
+
+    <style>
+        .container {
+            width: 500px;
+            height: 30px;
+            border: 2px solid black;
+        }
+
+        .bar {
+            height: 100%;
+            width: 0;
+            background-color: rgb(14, 169, 58);
+
+            animation-name: loading;
+            animation-duration: 4s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes loading {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Loading...</h2>
+
+    <div class="container">
+        <div class="bar"></div>
+    </div>
+
+</body>
+</html>
