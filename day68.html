@@ -36,6 +36,27 @@
         .grab {
             cursor: grab;
         }
+
+
+         button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background-color: blue;
+            color: white;
+
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .disabled {
+            background-color: gray;
+            cursor: not-allowed;
+        }
     </style>
 </head>
 
@@ -47,6 +68,12 @@
     <div class="not-allowed">Not Allowed</div>
     <div class="crosshair">Crosshair</div>
     <div class="grab">Grab</div>
+
+
+
+     <button>Click Me</button>
+
+     <button class="disabled">Disabled</button>
 
 </body>
 </html>
