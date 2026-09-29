@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Flexbox Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .page {
+            display: grid;
+            grid-template-rows: 70px 1fr;
+            min-height: 100vh;
+        }
+
+        nav {
+            background-color: #111827;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 0 30px;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        .links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 40px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 30px;
+            background-color: #f1f5f9;
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <nav>
+
+            <h2>My Website</h2>
+
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+        </nav>
+
+        <main>
+
+            <div class="card">
+                <h2>Card 1</h2>
+
+                <div class="buttons">
+                    <button>View</button>
+                    <button>Buy</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Card 2</h2>
+
+                <div class="buttons">
+                    <button>View</button>
+                    <button>Buy</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Card 3</h2>
+
+                <div class="buttons">
+                    <button>View</button>
+                    <button>Buy</button>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
