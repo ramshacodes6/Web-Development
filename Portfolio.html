@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--light);
+            color: var(--text);
+        }
+
+
+        /* =========================
+           NAVBAR - FLEXBOX
+        ========================== */
+
+        nav {
+            height: 70px;
+            background-color: var(--dark);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 0 7%;
+            background-color: #111872;
+        }
+
+        nav h2 {
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            color: #60a5fa;
+        }
+    </style>
+</head>
+<body>
+    <!--navbar-->
+
+    <nav>
+        <h2> My Portfolio </h2>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#Projects">Projects</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+</body>
+</html>
