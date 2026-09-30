@@ -59,6 +59,66 @@
         .links a:hover {
             color: #60a5fa;
         }
+
+
+        .hero {
+            min-height: 500px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            background: linear-gradient(
+                135deg,
+                #dbeafe,
+                #eff6ff
+            );
+
+            padding: 50px 20px;
+        }
+
+        .hero-content {
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            color: var(--dark);
+
+            text-shadow: 3px 3px 8px #aaa;
+        }
+
+        .hero p {
+            margin: 15px 0 25px;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 12px 25px;
+
+            background-color: var(--primary);
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+
+            box-shadow: 0 8px 15px #999;
+        }
+
+        
     </style>
 </head>
 <body>
