@@ -11,6 +11,14 @@
             box-sizing: border-box;
         }
 
+        
+
+        .page {
+            display: grid;
+            grid-template-rows: 70px 1fr;
+            min-height: 100vh;
+        }
+
         html {
             scroll-behavior: smooth;
         }
@@ -22,9 +30,9 @@
         }
 
 
-        /* =========================
+        /*
            NAVBAR - FLEXBOX
-        ========================== */
+        */
 
         nav {
             height: 70px;
@@ -118,6 +126,33 @@
             box-shadow: 0 8px 15px #999;
         }
 
+
+                main {
+            padding: 40px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 30px;
+            background-color: #f1f5f9;
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
         
     </style>
 </head>
@@ -150,7 +185,9 @@
             </a>
 
         </div>
-
+<!-- 
+        Card Section
+         -->
 
         <main>
 
