@@ -57,7 +57,20 @@
             var isOpen = false;
             console.log(!isOpen);
 
-      
+        //5. string operators
+             var str1 = "Hello";
+             var str2 = "World";
+             var str3 = str1 + str2;
+             console.log(str3);
+
+         //6 ternary operator 
+         let age = 14;
+         let results = age >= 18? "yes" :"no";
+         console.log(results);
+
+         let marks = 88;
+         let result = marks>60? "Pass" : "Fail";
+         console.log(result);
 
     </script>
 </html>
