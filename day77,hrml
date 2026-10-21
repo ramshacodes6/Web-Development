@@ -39,6 +39,25 @@
         console.log(5 >= 10);
 
        
+ //4. logical operators (AND[&&]  OR[||]  NOT[!] )
+
+                //AND 
+
+            var q = 5;
+            var p = 10;
+            console.log(q>0 && p<0); //output false
+
+                //OR
+
+            var m = 10;
+            var n = 0;
+            console.log(m>10 || n>10);    //ootput true
+
+                //NOT
+            var isOpen = false;
+            console.log(!isOpen);
+
+      
 
     </script>
 </html>
