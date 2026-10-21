@@ -25,7 +25,20 @@
         console.log(sum);
         console.log(rem);
        
+ //3. comparison operators (=== < > <= >=) check and return in boolean value
 
+        //Equal (==): Checks if two values are equal
+         console.log(5 == "5"); // output true
+
+        // Strict Equal (===)
+        console.log(5 === "5");  // output false
+
+        console.log(5 > 2);
+        console.log(5 < 10);
+        console.log(10 <= 10);
+        console.log(5 >= 10);
+
+       
 
     </script>
 </html>
