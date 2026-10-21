@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>expressiona and operators</title>
+    </head>
+    <body> <h2>Welcome ! </h2></body>
+    <script>
+
+          //operand + opertor = expression 
+
+
+                //type of operators
+        // 1. assignment operators (=)
+        var myAge = 20;
+        console.log(myAge);
+
+        //2. arithmetic operaators ( + - * / % )
+        let x = 5;
+        let y = 2;
+        let sum = x+y;
+        let a = x-y;
+        let b = x*y;
+        let c = x/y;
+        let rem= x%y; // 
+        console.log(sum);
+        console.log(rem);
+       
+
+
+    </script>
+</html>
