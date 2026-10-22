@@ -52,6 +52,34 @@
 
 
 
+        //Nested if
+
+    var userAge = 12;
+    let isCitizen = true;
+    let isRegisterd = false;
+    if(userAge>=18)
+    {
+        if(isCitizen)
+        {
+            if(isRegisterd)
+            {
+            console.log("Eligible for vote"); 
+            }
+            else{
+                console.log("you are not eligile due to registration status")
+            }
+        }
+        else 
+        {
+            console.log("Not eligible for vote due to citizen status");
+        }
+        
+    }
+    else{
+        console.log("You are not eligible for vote")
+    }
+   
+
 
 
 
