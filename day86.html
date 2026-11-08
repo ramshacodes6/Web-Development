@@ -35,5 +35,19 @@ function greet() {
 greet();
 
 console.log(message);
+
+
+//block scope
+
+if (true) {
+
+    let age = 22;
+    const city = "Delhi";
+
+    console.log(age);
+    console.log(city);
+}
+
+console.log(age);
 </script>
 </html>
