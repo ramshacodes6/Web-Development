@@ -10,6 +10,8 @@
 </body>
 
 <script>
+
+    //global scope
     let name = "Ramsha";
 
 function greet() {
@@ -19,5 +21,19 @@ function greet() {
 greet();
 
 console.log(name);
+
+
+//function scope
+
+function greet() {
+
+    let message = "Hello World";
+
+    console.log(message);
+}
+
+greet();
+
+console.log(message);
 </script>
 </html>
